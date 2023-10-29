@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overnight Cost Estimate</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="/styles/costEstimate.css">
+</head>
+<nav>
+    <a href="/html/index.html">Home</a>
+</nav>
+<body>
+    <h1>Overnight Cost Estimate</h1>
+    <form id="price-quote-form">
+        <!-- Name Section -->
+        <label for="name">Please Enter your name:</label>
+        <input type="text" id="name" required />
+
+        <!-- Email Section -->
+        <label for="email">Please Enter your email:</label>
+        <input type="text" id="email" required />
+
+        <!-- Check-In Date -->
+        <label for="checkin-date">Check-in Date:</label>
+        <input type="date" id="checkin-date" required/>
+
+        <!-- Number Of Nights -->
+        <label for="nights">Number of Nights (1 - 28): </label>
+        <input type="number" id="numberOfNights" min="1" max="28" required>
+        <br>
+        <br>
+
+        <!-- Room Type -->
+        <label>Room Type: </label>
+        <br>
+        <input type="radio" name="room-type" id="queen" value="Queen">Queen<br>
+        <input type="radio" name="room-type" id="king" value="King">King<br>
+        <input type="radio" name="room-type" id="suite" value="2-Bedroom Suite">2-Bedroom Suite<br>
+        <br>
+
+        <!-- Number of Adults and Children -->
+        <label for="adults">Number of Adults (1 - 4): </label>
+        <input type="number" id="adults" min="1" max="4" required><br>
+
+        <label for="children">Number of Children (0 - 4):</label>
+        <input type="number" id="children" min="0" max="4" required><br>
+        <br>
+        <!-- Discounts -->
+        <label>Discounts: </label><br>
+        <input type="radio" name="discount" id="none" value="None">None<br>
+        <input type="radio" name="discount" id="aaa-senior" value="AAA/Senior (10%)">AAA/Senior (10%)<br>
+        <input type="radio" name="discount" id="military" value="Military (20%)">Military (20%)<br>
+
+        <button type="submit">Get Price Quote</button>
+    </form>
+
+    <div id="messageDiv"></div>
+    <div id="price-quote-result">
+        <div id="cost-details"></div>
+    </div>
+
+    <script src="/scripts/costEstimate.js"></script>
+</body>
+</html>

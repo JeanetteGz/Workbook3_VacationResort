@@ -78,8 +78,8 @@ function calculateCost() {
         `;
     }
 
-function displayMessage(message) {
-    const messageDiv = document.getElementById("messageDiv");
-    messageDiv.innerText = "The room you selected will not hold your party.";
-}
+// function displayMessage(message) {
+//     const messageDiv = document.getElementById("messageDiv");
+//     messageDiv.innerText = "The room you selected will not hold your party.";
+// }
 

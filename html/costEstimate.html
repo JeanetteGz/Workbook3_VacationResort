@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overnight Cost Estimate</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/costEstimate.css">
 </head>
-<nav>
-    <a href="/html/index.html">Home</a>
-</nav>
+
 <body>
-    <h1>Overnight Cost Estimate</h1>
-    <form id="price-quote-form">
-        <!-- Name Section -->
-        <label for="name">Please Enter your name:</label>
-        <input type="text" id="name" required />
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+        <a class="navbar-brand" href="/html/index.html">Home</a>
+        <a class="navbar-brand" href="/html/costEstimate.html">Overnight Cost Estimate</a>
+        <a class="navbar-brand" href="/html/dining.html">Dining</a>
+        <a class="navbar-brand" href="/html/rentaCar.html">Rent-A-Car</a>
+        <a class="navbar-brand" href="/html/activities.html">Activities</a>
+    </nav>
+    <div class="container mt-4">
+        <h1>Overnight Cost Estimate</h1>
+        <form id="price-quote-form">
+            <div class="form-group">
+                <label for="name">Please Enter your name:</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
 
-        <!-- Email Section -->
-        <label for="email">Please Enter your email:</label>
-        <input type="text" id="email" required />
+            <div class="form-group">
+                <label for="email">Please Enter your email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
 
-        <!-- Check-In Date -->
-        <label for="checkin-date">Check-in Date:</label>
-        <input type="date" id="checkin-date" required/>
+            <div class="form-group">
+                <label for="checkin-date">Check-in Date:</label>
+                <input type="date" class="form-control" id="checkin-date" required>
+            </div>
 
-        <!-- Number Of Nights -->
-        <label for="nights">Number of Nights (1 - 28): </label>
-        <input type="number" id="numberOfNights" min="1" max="28" required>
-        <br>
-        <br>
+            <div class="form-group">
+                <label for="numberOfNights">Number of Nights (1 - 28): </label>
+                <input type="number" class="form-control" id="numberOfNights" min="1" max="28" required>
+            </div>
 
-        <!-- Room Type -->
-        <label>Room Type: </label>
-        <br>
-        <input type="radio" name="room-type" id="queen" value="Queen">Queen<br>
-        <input type="radio" name="room-type" id="king" value="King">King<br>
-        <input type="radio" name="room-type" id="suite" value="2-Bedroom Suite">2-Bedroom Suite<br>
-        <br>
+            <div class="form-group">
+                <label>Room Type: </label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="room-type" id="queen" value="Queen">
+                    <label class="form-check-label" for="queen">Queen</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="room-type" id="king" value="King">
+                    <label class="form-check-label" for="king">King</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="room-type" id="suite" value="2-Bedroom Suite">
+                    <label class="form-check-label" for="suite">2-Bedroom Suite</label>
+                </div>
+            </div>
 
-        <!-- Number of Adults and Children -->
-        <label for="adults">Number of Adults (1 - 4): </label>
-        <input type="number" id="adults" min="1" max="4" required><br>
+            <div class="form-group">
+                <label for="adults">Number of Adults (1 - 4): </label>
+                <input type="number" class="form-control" id="adults" min="1" max="4" required>
+            </div>
 
-        <label for="children">Number of Children (0 - 4):</label>
-        <input type="number" id="children" min="0" max="4" required><br>
-        <br>
-        <!-- Discounts -->
-        <label>Discounts: </label><br>
-        <input type="radio" name="discount" id="none" value="None">None<br>
-        <input type="radio" name="discount" id="aaa-senior" value="AAA/Senior (10%)">AAA/Senior (10%)<br>
-        <input type="radio" name="discount" id="military" value="Military (20%)">Military (20%)<br>
+            <div class="form-group">
+                <label for="children">Number of Children (0 - 4):</label>
+                <input type="number" class="form-control" id="children" min="0" max="4" required>
+            </div>
 
-        <button type="submit">Get Price Quote</button>
-    </form>
+            <div class="form-group">
+                <label>Discounts: </label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="discount" id="none" value="None">
+                    <label class="form-check-label" for="none">None</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="discount" id="aaa-senior" value="AAA/Senior (10%)">
+                    <label class="form-check-label" for="aaa-senior">AAA/Senior (10%)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="discount" id="military" value="Military (20%)">
+                    <label class="form-check-label" for="military">Military (20%)</label>
+                </div>
+            </div>
 
-    <div id="messageDiv"></div>
-    <div id="price-quote-result">
-        <div id="cost-details"></div>
+            <button type="submit" class="btn btn-primary">Get Price Quote</button>
+        </form>
+
+        <div id="messageDiv"></div>
+        <div id="price-quote-result">
+            <div id="cost-details"></div>
+        </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="/scripts/costEstimate.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,24 @@
 h1 {
     text-align: center;
     font-family: "Raleway", sans-serif;
+    margin-bottom: 90px;
+}
+body {
+    background-color: #212226;
+    color: white;
+}
+nav {
+    text-align: center;
+    text-decoration: none;
+}
+.card-img-top {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.card {
+    height: 100%;
+}
+.navbar a.navbar-brand {
+    color: white;
 }

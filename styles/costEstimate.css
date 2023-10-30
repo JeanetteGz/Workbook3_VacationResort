@@ -2,3 +2,17 @@ h1 {
     text-align: center;
     font-family: "Raleway", sans-serif;
 }
+body {
+    background-color: #212226;
+    color: white;
+}
+nav {
+    text-align: center;
+    text-decoration: none;
+}
+form-group {
+    width: 70px;
+}
+.navbar a.navbar-brand {
+    color: white;
+}

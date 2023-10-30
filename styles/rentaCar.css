@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 90px;
+    margin-top: 30px;
+}
+body {
+    background-color: #212226;
+    color: white;
+}
+nav {
+    text-align: center;
+    text-decoration: none;
+}
+.navbar a.navbar-brand {
+    color: white;
+}
+a:hover {
+    text-shadow: 0 0 5px rgba(43, 255, 241, 0.765);
+    color: white !important;
+}

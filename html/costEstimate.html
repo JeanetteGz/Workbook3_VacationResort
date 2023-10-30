@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Overnight Cost Estimate</title>
+    <title>Serenity Shores Resort</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="/styles/costEstimate.css">
 </head>
@@ -12,18 +12,22 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
         <a class="navbar-brand" href="/html/index.html">Home</a>
-        <a class="navbar-brand" href="/html/costEstimate.html">Overnight Cost Estimate</a>
         <a class="navbar-brand" href="/html/dining.html">Dining</a>
         <a class="navbar-brand" href="/html/rentaCar.html">Rent-A-Car</a>
         <a class="navbar-brand" href="/html/activities.html">Activities</a>
     </nav>
-    <div class="container mt-4">
-        <h1>Overnight Cost Estimate</h1>
-        <form id="price-quote-form">
-            <div class="form-group">
-                <label for="name">Please Enter your name:</label>
-                <input type="text" class="form-control" id="name" required>
-            </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center"></div>
+        <div class="col-md-7 mx-auto">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title">Overnight Cost Estimate</h1>
+                <form id="price-quote-form">
+                    <div class="form-group">
+                        <label for="name">Please Enter your name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
 
             <div class="form-group">
                 <label for="email">Please Enter your email:</label>
@@ -82,7 +86,7 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Get Price Quote</button>
+            <button type="submit" class="btn btn-primary">Estimate Stay Cost</button>
         </form>
 
         <div id="messageDiv"></div>

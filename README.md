@@ -1,4 +1,4 @@
-# Workbook 2 Workshop: Financial Calculators
+# Workbook 3 Workshop: Vacation Resort
 
 <h3>Home Page</h3>
 <img src="/images/readme/homepage.png">
